@@ -1,0 +1,18 @@
+<ul class="collection with-header">
+        <li class="collection-header"><h4>Employees</h4></li>
+        <br>
+        <ng-container *ngFor="let item of list">
+            <li class="collection-item">{{item.first_name}}
+                <a (click)="deleteEmployee(item.id)" class="secondary-content" style="padding-left: 10px;">
+                    <i class="material-icons">cancel</i>
+                </a>
+                <a routerLink="/update/{{item.id}}" class="secondary-content">
+                    <i class="material-icons">edit</i>
+                </a>
+            </li>
+        </ng-container>
+    </ul>
+<div class="button-add">
+    <a routerLink="/add" class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">add</i></a>
+</div>
+          

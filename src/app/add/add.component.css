@@ -1,0 +1,15 @@
+.container-form{
+    padding: 20px;
+}
+
+.collection{
+    border: none;
+}
+
+.buttons{
+    position: absolute;
+    bottom: 30px;
+    display: inline-flex;
+    justify-content:center;
+    width: 100%;
+}
